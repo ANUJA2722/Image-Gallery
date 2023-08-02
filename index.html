@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		How to make image Gallery Using
+		HTML CSS and Javascript?
+	</title>
+
+	<!--Style CSS-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>WELCOME TO IMAGE GALLERY</h1>
+	
+
+	<div class="myProducts">
+		<div class="myProducts-gallery">			
+			
+				<img src=
+"https://images.pexels.com/photos/355853/pexels-photo-355853.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+				<img src=
+"https://images.pexels.com/photos/1495160/pexels-photo-1495160.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+				<img src=
+"https://images.pexels.com/photos/1995730/pexels-photo-1995730.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+				<img src=
+"https://images.pexels.com/photos/1068508/pexels-photo-1068508.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+				<img src=
+"https://images.pexels.com/photos/531879/pexels-photo-531879.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+				<img src=
+"https://images.pexels.com/photos/927760/pexels-photo-927760.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+				<img src=
+"https://images.pexels.com/photos/1090977/pexels-photo-1090977.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+				<img src=
+"https://images.pexels.com/photos/1083515/pexels-photo-1083515.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+				<img src=
+"https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+
+			<img src=
+"https://images.pexels.com/photos/355853/pexels-photo-355853.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src=
+"https://images.pexels.com/photos/2254030/pexels-photo-2254030.jpeg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+		</div>
+
+		<div class="image-container">
+			<img id="img-Box" src=
+"https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg"
+				alt="click here">
+		</div>
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+
+</body>
+
+</html>
